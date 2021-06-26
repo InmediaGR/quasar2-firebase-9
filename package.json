@@ -1,7 +1,7 @@
 {
-  "name": "qfire",
+  "name": "quafire",
   "version": "0.0.1",
-  "description": "A Quasar Framework app",
+  "description": "Quasar 2 Firebase 9",
   "productName": "Quasar App",
   "author": "",
   "private": true,
