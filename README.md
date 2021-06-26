@@ -1,6 +1,6 @@
 # Quasar 2 Firebase 9 App (quafire)
 
-A Quasar2 Framework app using Firebase 9 as database
+A Quasar2 Framework for frontend. Firebase 9 as database backend
 
 ## Install the dependencies
 ```bash
