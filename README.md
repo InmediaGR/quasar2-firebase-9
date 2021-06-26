@@ -4,7 +4,7 @@ Quasar2 Framework for frontend. Firebase 9 as database backend
 
 ## Install the dependencies
 ```bash
-yarn install
+yarn
 ```
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
