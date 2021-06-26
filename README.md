@@ -1,10 +1,10 @@
-# Quasar App (qfire)
+# Quasar 2 Firebase 9 App (quafire)
 
-A Quasar Framework app
+A Quasar2 Framework app using Firebase 9 as database
 
 ## Install the dependencies
 ```bash
-yarn
+yarn install
 ```
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
