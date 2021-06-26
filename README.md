@@ -1,4 +1,5 @@
-# Quasar 2 Firebase 9 App (quafire)
+# Quasar 2 Firebase 9 App (quafire).
+I just learn ít. Welcome to contribute to this projects
 
 Quasar2 Framework for frontend. Firebase 9 as database backend
 
