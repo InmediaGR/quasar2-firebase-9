@@ -14,6 +14,9 @@ import { createStore } from 'vuex'
 
 export default store(function (/* { ssrContext } */) {
   const Store = createStore({
+    state: {
+      count: 0
+    },
     modules: {
       // example
     },
