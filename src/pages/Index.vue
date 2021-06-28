@@ -2,7 +2,8 @@
   <div class="q-pa-md row items-start q-gutter-md">
     <q-card class="my-card">
       <q-card-section>
-        <q-btn @click="increment" color="white" text-color="black" label="Standard" />
+        <div class="text-h6">Dynamic registering and unregistering vuex module into component</div>
+        <q-btn @click="increment" color="white" text-color="black" label="Click to increase state number value" />
       </q-card-section>
     </q-card>
 
@@ -12,7 +13,7 @@
     >
       <q-card-section>
         <div class="text-h6">  {{ count }} </div>
-        <div class="text-subtitle2">by John Doe</div>
+        <div class="text-subtitle2">by Bang Nguyen</div>
       </q-card-section>
 
       <q-card-section class="q-pt-none">
