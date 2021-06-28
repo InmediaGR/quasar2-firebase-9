@@ -6,36 +6,39 @@
       style="width: 200px; height: 200px"
     >
     <div>
-      {{ testCount }}
+      {{ count }} <br />
     </div>
     <q-btn @click="increment" color="white" text-color="black" label="Standard" />
   </q-page>
 </template>
 
 <script>
-import { defineComponent, computed, onMounted, onUnmounted, ref } from 'vue';
+import { defineComponent, computed, onMounted, onUnmounted, ref, Vue } from 'vue';
 import { mapActions, mapState, useStore } from 'vuex'
 import testModule from '../store/test'
+
 export default defineComponent({
   name: 'PageIndex',
-  
   setup () {
-    const $store = useStore() 
+    const $store = useStore()
     onMounted(() => {
     // register a module `testModule`
-    $store.registerModule('test', testStoreModule)
-    })
+    $store.registerModule('test', testModule)
+    }),
     onUnmounted(() => {
     $store.unregisterModule('test')
     })
-    const testCount = computed(() => {
-    return $store.state.test.count
-    })
-    increment: () => store.dispatch('test/increment')
-    return {
-      testCount
-    }
+    
   },
+  computed: {
+    ...mapState('test', {
+    count  : state => state.count
+    })
+  },
+  methods: {
+  ...mapActions('test', ['increment'])
+  },
+   
 
 })
 </script>
