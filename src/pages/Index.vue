@@ -28,16 +28,12 @@
 import { defineComponent, computed, onMounted, onUnmounted, ref, Vue } from 'vue';
 import { mapActions, mapState, useStore } from 'vuex'
 import testModule from '../store/test'
-
+import lazyModule from '../utils/lazyModule'
 export default defineComponent({
   name: 'PageIndex',
   setup () {
     const $store = useStore()
-    // register a module `testModule`
-    $store.registerModule('test', testModule)
-    onUnmounted(() => {
-      $store.unregisterModule('test')
-    })
+    lazyModule($store, 'test', testModule)
   },
   computed: {
     ...mapState('test', {
@@ -52,6 +48,11 @@ export default defineComponent({
 })
 
 </script>
+
+<style lang="sass" scoped>
+.my-card
+  width: 100%
+</style>cript>
 
 <style lang="sass" scoped>
 .my-card
