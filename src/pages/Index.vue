@@ -28,7 +28,7 @@
 import { defineComponent, computed, onMounted, onUnmounted, ref, Vue } from 'vue';
 import { mapActions, mapState, useStore } from 'vuex'
 import testModule from '../store/test'
-import lazyModule from '../utils/lazyModule'
+import { lazyModule } from '../utils/lazyModule'
 export default defineComponent({
   name: 'PageIndex',
   setup () {
