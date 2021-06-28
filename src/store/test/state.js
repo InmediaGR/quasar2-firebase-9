@@ -1,7 +1,9 @@
 export default function () {
   return {
-    state: () => ({
+    state: {
       count: 0
-    }),
+    }
+    //
   }
+}
 }

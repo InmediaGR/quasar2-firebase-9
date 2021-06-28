@@ -1,5 +1,6 @@
 
-export function increment ({state, commit}) {
+export function increment ({commit}) {
   commit('increment')
-  alert('test state' + state.count)
+}
+nt')
 }
