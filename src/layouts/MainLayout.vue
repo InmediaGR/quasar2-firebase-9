@@ -23,11 +23,11 @@
 </template>
 <script>
 import { defineComponent } from 'vue';
-import { ionHomeOutline } from '@quasar/extras/ionicons-v5'
+import { biHouse } from '@quasar/extras/bootstrap-icons'
 export default defineComponent({
   name: 'LayoutHome',
   setup () {
-    const homeIcon = ionHomeOutline
+    const homeIcon = biHouse
     return {
       homeIcon
     }
@@ -40,5 +40,5 @@ export default defineComponent({
     color: #444
     background-color: #fff
   .icon-tabs
-    font-size: 1.7rem
+    font-size: 1.5rem
 </style>
